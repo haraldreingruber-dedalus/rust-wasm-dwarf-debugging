@@ -14,4 +14,8 @@ tasks:
       command: |
           # run DevServer
           cd www
-          npm run start
+          npm run start -- --host 0.0.0.0 --allowed-hosts all
+
+vscode:
+  extensions:
+    - rust-lang.rust-analyzer
