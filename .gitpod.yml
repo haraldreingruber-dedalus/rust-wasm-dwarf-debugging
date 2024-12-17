@@ -1,0 +1,17 @@
+tasks:
+    - name: Build Rust & Run DevServer
+      init: |
+          # install wasm-pack
+          curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+          
+          # build WebAssembly with DWARF info
+          wasm-pack build --dev
+
+          # install npm dependencies
+          cd www
+          npm install
+
+      command: |
+          # run DevServer
+          cd www
+          npm run start
