@@ -2,11 +2,6 @@
 
 This example is based on the official Rust+Wasm Hello World example: https://rustwasm.github.io/docs/book/game-of-life/hello-world.html
 
-## Prerequisites
-
-- Install `wasm-pack`: https://rustwasm.github.io/wasm-pack/
-- Install [Chrome DevTools C++ DWARF debugging][devtools-extension] extension
-
 ## TLDR
 
 The main topics for enabling DWARF debugging are:
@@ -19,6 +14,11 @@ dwarf-debug-info = true
 
 * Run `wasm-pack` with the `--dev` profile
 * Install [Chrome DevTools C++ DWARF debugging][devtools-extension] extension
+
+## Prerequisites
+
+- Install `wasm-pack`: https://rustwasm.github.io/wasm-pack/
+- Install [Chrome DevTools C++ DWARF debugging][devtools-extension] extension
 
 ## Build and run demo with DWARF debug symbols
 
